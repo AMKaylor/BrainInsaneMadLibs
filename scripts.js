@@ -89,7 +89,8 @@ function Validation4()
     return true;
 }
 
-//---Combination of all validation()'s
+//----------------------------------------------------------------------------------------------------------------------
+//---Master Combination of all validation()'s
 function Validation()
 {
     Validation1();
@@ -492,6 +493,27 @@ function AllQuestionCheck()
     Question13();
     Question14();
     Question15();
+}
+
+//----------------------------------------------------------------------------------------------------------------------
+//--Save button function
+function Save()
+{
+    localStorage.setItem(WEAPON,weapon);
+    localStorage.setItem(DICE_ROLL, diceRoll);
+    localStorage.setItem(ADJECTIVE_1,adjective1);
+    localStorage.setItem(FAVORITE_COLOR,favoriteColor);
+    localStorage.setItem(PET,pet);
+    localStorage.setItem(FAVORITE_FOOD,favoriteFood);
+    localStorage.setItem(MONSTER,monster);
+    localStorage.setItem(ADJECTIVE_2,adjective2);
+    localStorage.setItem(SURVIVAL,survival);
+    localStorage.setItem(VICTIMS,victims);
+    localStorage.setItem(NOUN_1,noun1);
+    localStorage.setItem(BUTTON,button);
+    localStorage.setItem(KIDS,kids);
+    localStorage.setItem(FOOD,food);
+    localStorage.setItem(VALUABLE_ITEM,valuableItem);
 }
 
 //----------------------------------------------------------------------------------------------------------------------
