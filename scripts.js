@@ -40,3 +40,49 @@ function PageOnload()
     }
 }
 //----------------------------------------------------------------------------------------------------------------------
+//--To grab information easier from questionnaire
+function $(id)
+{
+    return document.getElementById(id);
+}
+//----------------------------------------------------------------------------------------------------------------------
+//--Constants for labeling of answers, and Variables to hold info for Save();
+const WEAPON = "Weapon";
+const DICE_ROLL = "Dice roll";
+const ADJECTIVE_1 = "Adjective 1";
+const FAVORITE_COLOR = "Favorite Color";
+const PET = "Pet";
+const FAVORITE_FOOD = "Favorite Food";
+const MONSTER = "Monster";
+const ADJECTIVE_2 = "Adjective 2";
+const SURVIVAL = "Survival";
+const VICTIMS = "Victims";
+const NOUN_1 = "Noun 1";
+const BUTTON = "Button Choice";
+const KIDS = "Number of Kids";
+const FOOD = "Food for life";
+const VALUABLE_ITEM = "Valuable Item";
+
+//---
+
+var weapon;
+var diceRoll;
+var adjective1;
+var favoriteColor;
+var pet;
+var favoriteFood;
+var monster;
+var adjective2;
+var survival;
+var victims;
+var noun1;
+var button;
+var kids;
+var food;
+var valuableItem;
+
+//--To Save information to local storage
+function Save()
+{
+
+}
