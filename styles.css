@@ -6,3 +6,4 @@ h3 {color: #FFCC33; font-family: Tahoma; font-stretch: expanded; font-size: 25px
 table {width: 1000px; text-align: center; font-size: 22px;}
 p {font-size: 22px;}
 #divRandomStories, #divRandomStories2 {font-weight: bold; font-style: italic; font-size: 24px;}
+#error1, #error2, #error3, #error4 {font-family: Tahoma; font-weight: bold; font-style: italic; font-size: 22px; color: Red;}

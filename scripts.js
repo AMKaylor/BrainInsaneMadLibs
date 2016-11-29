@@ -117,7 +117,7 @@ const KIDS = "Number of Kids";
 const FOOD = "Food for life";
 const VALUABLE_ITEM = "Valuable Item";
 
-//---
+//------------------------------------------------
 
 var weapon = "";
 var diceRoll = "";
@@ -134,7 +134,7 @@ var button = "";
 var kids = "";
 var food = "";
 var valuableItem = "";
-
+//----------------------------------------------------------------------------------------------------------------------
 
     //--Question 1
 function Question1()
@@ -499,6 +499,10 @@ function AllQuestionCheck()
 //--Save button function
 function Save()
 {
+    ClearError();
+    Validation();
+    AllQuestionCheck();
+
     localStorage.setItem(WEAPON,weapon);
     localStorage.setItem(DICE_ROLL, diceRoll);
     localStorage.setItem(ADJECTIVE_1,adjective1);
@@ -518,3 +522,34 @@ function Save()
 
 //----------------------------------------------------------------------------------------------------------------------
 //--Clear function (Clears both form and Storage)
+function Clear()
+{
+    ClearError();
+    localStorage.clear();
+
+    $("Weapon").selectedIndex = 0;
+    $("rad1").checked = true;
+    $("txtAdjective1").value = "";
+    $("txtColor").value = "";
+    $("Pets").selectedIndex = 0;
+    $("txtFavoriteFood").value = "";
+    $("radBigFoot").checked = true;
+    $("txtAdjective2").value = "";
+    $("radTossWoodenSticks").checked = true;
+    $("Victims").selectedIndex = 0;
+    $("radChair").checked = true;
+    $("radBlueButton").checked = true;
+    $("Kids").selectedIndex = 0;
+    $("Food").selectedIndex = 0;
+    $("radSapphire").checked = true;
+}
+
+//--Clear Error Messages
+function ClearError()
+{
+    $("error1").innerHTML = "";
+    $("error2").innerHTML = "";
+    $("error3").innerHTML = "";
+    $("error4").innerHTML = "";
+}
+//----------------------------------------------------------------------------------------------------------------------
