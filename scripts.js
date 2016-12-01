@@ -196,14 +196,14 @@ function Question2() {
     //--Question 3
 function Question3()
 {
-    adjective1 = $("txtAdjective1").innerHTML;
+    adjective1 = $("txtAdjective1").value;
     return adjective1;
 }
 
     //--Question 4
 function Question4()
 {
-    favoriteColor = $("txtColor").innerHTML;
+    favoriteColor = $("txtColor").value;
     return favoriteColor;
 }
 
@@ -241,7 +241,7 @@ function Question5()
     //--Question 6
 function Question6()
 {
-    favoriteFood = $("txtFavoriteFood").innerHTML;
+    favoriteFood = $("txtFavoriteFood").value;
     return favoriteFood;
 }
 
@@ -274,7 +274,7 @@ function Question7()
     //--Question 8
 function Question8()
 {
-    adjective2 = $("txtAdjective2").innerHTML;
+    adjective2 = $("txtAdjective2").value;
     return adjective2;
 }
 
@@ -553,3 +553,56 @@ function ClearError()
     $("error4").innerHTML = "";
 }
 //----------------------------------------------------------------------------------------------------------------------
+//--Fill function for Jokes
+function FillJoke()
+{
+        favoriteFood = localStorage.getItem(FAVORITE_FOOD);
+           $("Joke1").innerHTML = favoriteFood;
+        pet = localStorage.getItem(PET);
+           $("Joke2").innerHTML = pet;
+        diceRoll = localStorage.getItem(DICE_ROLL);
+           $("Joke3").innerHTML = diceRoll;
+        adjective2 = localStorage.getItem(ADJECTIVE_2);
+           $("Joke4").innerHTML = adjective2;
+}
+//----------------------------------------------------------------------------------------------------------------------
+//--Fill function for Short
+function FillShort()
+{
+        monster = localStorage.getItem(MONSTER);
+            $("Short1").innerHTML = monster;
+        kids = localStorage.getItem(KIDS);
+            $("Short2").innerHTML = kids;
+        favoriteColor = localStorage.getItem(FAVORITE_COLOR);
+            $("Short3").innerHTML = favoriteColor;
+        monster = localStorage.getItem(MONSTER);
+            $("Short4").innerHTML = monster;
+            $("Short5").innerHTML = monster;
+            $("Short6").innerHTML = monster;
+}
+//----------------------------------------------------------------------------------------------------------------------
+//--Fill function for Scenario
+function FillScenario()
+{
+        weapon = localStorage.getItem(WEAPON);
+            $("Scenario1").innerHTML = weapon;
+            $("Scenario7").innerHTML = weapon;
+            $("Scenario11").innerHTML = weapon;
+            $("Scenario14").innerHTML = weapon;
+        monster = localStorage.getItem(MONSTER);
+            $("Scenario2").innerHTML = monster;
+            $("Scenario6").innerHTML = monster;
+            $("Scenario9").innerHTML = monster;
+            $("Scenario13").innerHTML = monster;
+        adjective1 = localStorage.getItem(ADJECTIVE_1);
+            $("Scenario3").innerHTML = adjective1;
+            $("Scenario5").innerHTML = adjective1;
+        diceRoll = localStorage.getItem(DICE_ROLL);
+            $("Scenario4").innerHTML = diceRoll;
+        adjective2 = localStorage.getItem(ADJECTIVE_2);
+            $("Scenario8").innerHTML = adjective2;
+        button = localStorage.getItem(BUTTON);
+            $("Scenario10").innerHTML = button;
+        food = localStorage.getItem(FOOD);
+            $("Scenario12").innerHTML = food;
+}
